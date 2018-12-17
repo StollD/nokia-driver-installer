@@ -1,5 +1,5 @@
 #define MyAppName "Nokia USB Driver"
-#define MyAppVersion "1.1.0"
+#define MyAppVersion "1.4.0"
 #define MyAppPublisher "HMD Global"
 
 [Setup]
@@ -18,11 +18,11 @@ SolidCompression=yes
 Name: "english"; MessagesFile: "compiler:Default.isl"
 
 [Files]
-Source: "data\Phone_F_USB_Driver_v3.5.0.msi"; DestDir: "{tmp}"; Flags: ignoreversion
+Source: "data\Phone_F_USB_Driver_v3.8.0.msi"; DestDir: "{tmp}"; Flags: ignoreversion
 Source: "data\Phone_M_USB_Driver_v1.2.0.msi"; DestDir: "{tmp}"; Flags: ignoreversion
-Source: "data\Phone_Nokia_USB_Driver_v1.1.0.msi"; DestDir: "{tmp}"; Flags: ignoreversion
+Source: "data\Phone_Nokia_USB_Driver_v1.4.0.msi"; DestDir: "{tmp}"; Flags: ignoreversion
 
 [Run]
-Filename: "msiexec.exe"; Parameters: "/i ""{tmp}\Phone_F_USB_Driver_v3.5.0.msi"" /qn"; StatusMsg: Installing Phone-F USB Driver;
+Filename: "msiexec.exe"; Parameters: "/i ""{tmp}\Phone_F_USB_Driver_v3.8.0.msi"" /qn"; StatusMsg: Installing Phone-F USB Driver;
 Filename: "msiexec.exe"; Parameters: "/i ""{tmp}\Phone_M_USB_Driver_v1.2.0.msi"" /qn"; StatusMsg: Installing Phone-M USB Driver;
-Filename: "msiexec.exe"; Parameters: "/i ""{tmp}\Phone_Nokia_USB_Driver_v1.1.0.msi"" /qn"; StatusMsg: Installing Nokia USB Driver;
+Filename: "msiexec.exe"; Parameters: "/i ""{tmp}\Phone_Nokia_USB_Driver_v1.4.0.msi"" /qn"; StatusMsg: Installing Nokia USB Driver;
